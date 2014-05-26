@@ -1,0 +1,102 @@
+<p>
+	Off canvas is hidden panel that can be used for displaying hidden blocks or menus. It can be used anywhere on your Joomla pages including modules and extensions.
+</p>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Options</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>class="yjsg-offc-btn"</code></td>
+					<td><span class="text-error">*Required option</span>. Canvas trigger class name.</td>
+				</tr>
+				<tr>
+					<td><code>data-yjsg-canvas</code></td>
+					<td><span class="text-error">*Required option</span>. Container that holds the canvas.</td>
+				</tr>
+				<tr>
+					<td><code>data-width</code></td>
+					<td><span class="text-error">*Required option</span>. Canvas container width.</td>
+				</tr>
+				<tr>
+					<td><code>data-position</code></td>
+					<td>Opening canvas position. Not required for default setup. Default is left.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block1" data-width="280">
+			Custom list
+		</a>
+		<div id="block1" class="yjsg-off_canvas">
+			<div class="yjsg-off_canvas_in">
+				<h3>Canvas 1</h3>
+				<ul>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ul>
+			</div>
+		</div>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block1" data-width="280">
+			Custom list
+		</a>
+		<div id="block1" class="yjsg-off_canvas">
+			<div class="yjsg-off_canvas_in">
+				<h3>Canvas 1</h3>
+				<ul>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ul>
+			</div>
+		</div>
+		[/yjsgpre] </div>
+</div>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block2" data-position="right" data-width="380">
+			Canvas 2 right
+		</a>
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block2" data-width="380">
+			Canvas 2 left
+		</a>
+		<div id="block2" class="yjsg-off_canvas">
+			<div class="yjsg-off_canvas_in">
+				<h3>Canvas 2</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipisciaoreet dolore magnpo consequat. Dum iriure dolor in hendrerit in vu t tte feugait nulla facilisi.
+				</p>
+			</div>
+		</div>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block2" data-position="right" data-width="380">
+			Canvas 2 right
+		</a>
+		<a href="#" class="yjsg-offc-btn button" data-yjsg-canvas="#block2" data-width="380">
+			Canvas 2 left
+		</a>
+		<div id="block2" class="yjsg-off_canvas">
+			<div class="yjsg-off_canvas_in">
+				<h3>Canvas 2</h3>
+				<p>
+					Content...
+				</p>
+			</div>
+		</div>
+		[/yjsgpre] </div>
+</div>

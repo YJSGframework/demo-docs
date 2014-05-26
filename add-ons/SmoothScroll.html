@@ -1,0 +1,173 @@
+<p>
+	SmoothScroll is jQuery function that auto targets all the anchors in a page and display a smooth scrolling effect upon clicking them.<br/>
+	For a simple use we have created smoothscroll class <code>yjscroll</code> that can be used on your anchors.
+</p>
+<div id="smothscroll" class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Options</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>data-before</code></td>
+					<td>Stop scroll <code>nth</code> px before the element.</td>
+				</tr>
+				<tr>
+					<td><code>data-after</code></td>
+					<td>Stop scroll <code>nth</code> px after the element.</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<ul class="star" id="smmenu">
+			<li>
+				<a class="yjscroll" href="#p1" data-before="80">
+					Scroll to Section 1
+				</a>
+			</li>
+			<li>
+				<a class="yjscroll" href="#p2" data-before="80">
+					Scroll to Section 2
+				</a>
+			</li>
+			<li>
+				<a class="yjscroll" href="#p3" data-before="80">
+					Scroll to Section 3
+				</a>
+			</li>
+			<li>
+				<a class="yjscroll" href="#p4" data-before="80">
+					Scroll to Section 4
+				</a>
+			</li>
+		</ul>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<a class="yjscroll" href="#my_element">
+			Scroll to 1
+		</a>
+		<a class="yjscroll" href="#my_element2" data-before="80">
+			Scroll to 2
+		</a>
+		<a class="yjscroll" href="#my_element2" data-after="100">
+			Scroll to 3
+		</a>
+		<div id="my_element"> Content... </div>
+		<div id="my_element2"> Content... </div>
+		<div id="my_element3"> Content... </div>
+		[/yjsgpre]
+		<div id="p1" style="margin-top:1000px;">
+			<h2> Section 1
+				<a class="yjscroll" href="#header">
+					back to top
+				</a>
+			</h2>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+		</div>
+		<div id="p2">
+			<h2> Section 2
+				<a class="yjscroll" href="#header">
+					back to top
+				</a>
+			</h2>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+		</div>
+		<div id="p3">
+			<h2> Section 3
+				<a class="yjscroll" href="#header">
+					back to top
+				</a>
+			</h2>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+		</div>
+		<div id="p4">
+			<h2> Section 4
+				<a class="yjscroll" href="#header">
+					back to top
+				</a>
+			</h2>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+			<p>
+				Proin suscipit tincidunt est, in lobortis odio congue id. Etiam id mauris ac sapien sagittis imperdiet. Phasellus et nunc ante, nec ullamcorper risus. Donec arcu elit, tincidunt eget condimentum in, condimentum in sem. Aliquam mi felis, volutpat at tristique condimentum, pellentesque ac massa. Donec dictum rutrum ipsum, sit amet vehicula orci ullamcorper at. In rhoncus felis sed orci sodales sed dictum libero laoreet. Integer elementum ante in diam sodales ac eleifend lacus posuere. Sed erat dolor, blandit quis scelerisque quis, porta id urna.<br />
+				<br />
+				Nullam placerat ornare enim. Suspendisse in orci quis nisi elementum pretium vel non libero. Sed et dui ut purus gravida elementum lacinia vitae dui. Maecenas pretium est quis erat tincidunt eget rutrum urna sodales. Mauris a tortor ante. Proin laoreet lectus vel lorem semper sed vehicula magna cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id elit arcu.
+			</p>
+		</div>
+	</div>
+</div>

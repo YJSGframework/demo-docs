@@ -1,0 +1,73 @@
+<p>
+	Yjsg v2 is equipped with simple CSS tooltips that you can use on any HTML elements.
+</p>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Options</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>data-yjsg-tip</code></td>
+					<td><span class="text-error">*Required option</span>. Data attribute that contains the tooltip.</td>
+				</tr>
+				<tr>
+					<td><code>class="yjsg-tip-left"</code></td>
+					<td>Display tooltip on the left side.</td>
+				</tr>
+				<tr>
+					<td><code>class="yjsg-tip-right"</code></td>
+					<td>Display tooltip on the right side.</td>
+				</tr>
+				<tr>
+					<td><code>class="yjsg-tip-top"</code></td>
+					<td>Display tooltip above the element</td>
+				</tr>
+				<tr>
+					<td><code>class="yjsg-tip-bottom"</code></td>
+					<td>Display tooltip under the element</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a class="button" href="#" data-yjsg-tip="I am CSS tooltip">
+			Default tooltip
+		</a>
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a class="yjsg-tip-left button" href="#" data-yjsg-tip="I am left tooltip">
+			Left tooltip
+		</a>
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a class="yjsg-tip-right button" href="#" data-yjsg-tip="I am right tooltip">
+			Right tooltip
+		</a>
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<a class="yjsg-tip-bottom button" href="#" data-yjsg-tip="I am Bottom tooltip">
+			Bottom tooltip
+		</a>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<a class="button" href="#" data-yjsg-tip="I am CSS tooltip">
+			Default tooltip
+		</a>
+		<a class="yjsg-tip-left button" href="#" data-yjsg-tip="I am left tooltip">
+			Left tooltip
+		</a>
+		<a class="yjsg-tip-right button" href="#" data-yjsg-tip="I am right tooltip">
+			Right tooltip
+		</a>
+		<a class="yjsg-tip-bottom button" href="#" data-yjsg-tip="I am bottom tooltip">
+			Bottom tooltip
+		</a>
+		[/yjsgpre]
+	</div>
+</div>

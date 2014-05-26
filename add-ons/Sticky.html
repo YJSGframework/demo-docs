@@ -1,0 +1,179 @@
+<p>
+	Sticky is a element that transforms in to a fixed position container. Stickies are useful for attracting users attention or to trigger hidden menus. You can also use <code>data-sticky-menu</code> to convert the sticky in to a smooth scroll menu.
+</p>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Options</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>class="yjsg-sticky"</code></td>
+					<td><span class="text-error">*Required option</span>. Sticky trigger class name.</td>
+				</tr>
+				<tr>
+					<td><code>data-hide</code></td>
+					<td><span class="text-error">*Required option</span>. This option defines if the sticky should be hidden until scrolled in to view or if it should stay visible.</td>
+				</tr>
+				<tr>
+					<td><code>data-pushed</code></td>
+					<td><span class="text-error">*Required option</span>. You can use this option to push sticky down. Set to <code>0</code> not to push the sticky.</td>
+				</tr>
+				<tr>
+					<td><code>data-offset</code></td>
+					<td><span class="text-error">*Required option</span>. This is a top position offset where the sticky should become visible.</td>
+				</tr>
+				<tr>
+					<td><code>data-effect</code></td>
+					<td><span class="text-error">*Required option</span>. Sticky has 2 transition options. You can use <code>slide</code> or <code>fade</code>.</td>
+				</tr>
+				<tr>
+					<td><code>class="yjsgsitew"</code></td>
+					<td>This is optional helper class that can be used inside the sticky contaner. This class holds the site width thus aligns the sticky in the middle.</td>
+				</tr>
+				<tr>
+					<td><code>class="inside-container"</code></td>
+					<td>This is optional helper class that can be used inside the sticky contaner. This class lines up the grid system paddings.</td>
+				</tr>
+				<tr>
+					<td><code>data-sticky-menu</code></td>
+					<td>Converts the sticky container in to a smooth scroll sticky menu. Requires specific setup. See markup.</td>
+				</tr>
+				<tr>
+					<td><code>data-sticky-block</code></td>
+					<td>Converts sticky menu in to a right aligned sticky menu block. Requires specific setup. See markup.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="stickyexample" class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<div class="yjsg-sticky" data-hide="no" data-pushed="0" data-offset="500" data-effect="slide">
+			<div class="yjsgsitew"> I will become a sticky once you scroll 500px down.</div>
+		</div>
+	</div>
+	<div class="yjsg-sticky" data-hide="yes" data-pushed="120" data-offset="400" data-effect="fade" data-sticky-menu>
+		<div class="yjsgsitew inside-container">
+			<ul class="yjsg-sticky-menu">
+				<li>
+					<a class="yjscroll" data-before="120" href="#header">
+						Go back up
+					</a>
+				</li>
+				<li>
+					<a class="yjscroll" data-before="120" href="#scroll1">
+						Go to scroll 1
+					</a>
+				</li>
+				<li>
+					<a class="yjscroll" data-before="120" href="#scroll2">
+						Go to scroll 2
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="yjsg-sticky" data-hide="yes" data-pushed="250" data-offset="550" data-effect="slide" data-sticky-menu data-sticky-block>
+		<div class="yjsgsitew inside-container">
+			<ul class="yjsg-sticky-menu">
+				<li>
+					<a class="yjscroll" data-before="120" href="#header">
+						Go back up
+					</a>
+				</li>
+				<li>
+					<a class="yjscroll" data-before="120" href="#scroll1">
+						Go to scroll 1
+					</a>
+				</li>
+				<li>
+					<a class="yjscroll" data-before="120" href="#scroll2">
+						Go to scroll 2
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="1"]
+		<!-- default sticky -->
+		<div class="yjsg-sticky" data-hide="no" data-pushed="0" data-offset="500" data-effect="slide">
+			<div class="yjsgsitew"> I will become a sticky once you scroll 500px down.</div>
+		</div>
+		<!-- sticky menu -->
+		<div class="yjsg-sticky" data-hide="yes" data-pushed="120" data-offset="400" data-effect="fade" data-sticky-menu>
+			<div class="yjsgsitew inside-container">
+				<ul class="yjsg-sticky-menu">
+					<li>
+						<a class="yjscroll" data-before="120" href="#header">
+							Go back up
+						</a>
+					</li>
+					<li>
+						<a class="yjscroll" data-before="120" href="#scroll1">
+							Go to scroll 1
+						</a>
+					</li>
+					<li>
+						<a class="yjscroll" data-before="120" href="#scroll2">
+							Go to scroll 2
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- sticky menu block -->
+		<div class="yjsg-sticky" data-hide="yes" data-pushed="250" data-offset="550" data-effect="slide" data-sticky-menu data-sticky-block>
+			<div class="yjsgsitew inside-container">
+				<ul class="yjsg-sticky-menu">
+					<li>
+						<a class="yjscroll" data-before="120" href="#header">
+							Go back up
+						</a>
+					</li>
+					<li>
+						<a class="yjscroll" data-before="120" href="#scroll1">
+							Go to scroll 1
+						</a>
+					</li>
+					<li>
+						<a class="yjscroll" data-before="120" href="#scroll2">
+							Go to scroll 2
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		[/yjsgpre] </div>
+</div>
+<div style="margin-bottom:1500px;"></div>
+<div id="scroll1">
+	<h3 class="yjsg-sub-heading"><br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		I am scroll 1</h3>
+</div>
+<div style="margin-bottom:1500px;"></div>
+<div id="scroll2">
+	<h3 class="yjsg-sub-heading"><br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		I am scroll 2</h3>
+</div>
+<div style="margin-bottom:1500px;"></div>
