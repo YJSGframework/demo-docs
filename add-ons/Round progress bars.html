@@ -1,3 +1,132 @@
 <p>
-Round progress bars
+	Round progress bars are very useful if you would like to display appealing number progress. To activate the round progress simply add <code>data-yjsg-round-progress</code> to your element. Note that by default the counter width and height is 150px and color is blue.<br />
+	See options below if you wish to modify the defaults.
 </p>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Options</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>data-yjsg-round-progress</code></td>
+					<td><span class="text-error">*Required option</span>. This data property will activate round progress bar.</td>
+				</tr>
+				<tr>
+					<td><code>data-start</code></td>
+					<td>This is a counter start. Default is 0</td>
+				</tr>
+				<tr>
+					<td><code>data-end</code></td>
+					<td>This is a counter end. Default is 100</td>
+				</tr>
+				<tr>
+					<td><code>data-border</code></td>
+					<td>This is a counter border width. Default is 5 ( 5px ).</td>
+				</tr>
+				<tr>
+					<td><code>data-percent</code></td>
+					<td>This will show percent sign. Default is true.</td>
+				</tr>
+				<tr>
+					<td><code>data-speed</code></td>
+					<td>Progress speed. Default is 10.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">example:</h3>
+	</div>
+	<div class="yjsg-col-1-3">
+		<div class="yjsg-center" data-yjsg-round-progress data-start="8"  data-end="88"></div>
+	</div>
+	<div class="yjsg-col-1-3">
+		<div class="yjsg-center" style="color:#ff6600;border-top-color:#ff6600;border-bottom-color:#efefef;" data-yjsg-round-progress data-start="0"  data-end="58" data-border="10" data-speed="20" data-percent="false"></div>
+	</div>
+	<div class="yjsg-col-1-3">
+		<div class="yjsg-center" data-yjsg-round-progress data-start="28"  data-end="78"></div>
+	</div>
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<div class="mybar yjsg-center" data-yjsg-round-progress data-start="8"  data-end="88"></div>
+		<div class="yjsg-center" style="color:#ff6600;border-top-color:#ff6600;border-bottom-color:#efefef;" data-yjsg-round-progress data-start="0"  data-end="58" data-border="10" data-speed="20" data-percent="false"></div>
+		<div class="mybar yjsg-center" data-yjsg-round-progress data-start="28"  data-end="78"></div>
+		[/yjsgpre] </div>
+	<div class="yjsg-col-1">
+		<h3>Custom styling</h3>
+		<p>
+			To make custom styles for your round progress bars you can use following CSS on your progress bar element.
+		</p>
+		<h3 class="yjsg-sub-heading">code:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		.my_progress_bar{
+		width:200px; // progress width
+		height:200px;// progress height
+		font-size:20px; // progress font size
+		color:#ff6600; // progress font color
+		border-top-color:#2ecc71; // progress top color
+		border-bottom-color:#efefef; // progress bottom color
+		
+		}
+		[/yjsgpre]
+		<h3 class="yjsg-sub-heading">example:</h3>
+		<style type="text/css">
+		.my_progress_bar{
+			width:200px;
+			height:200px;
+			font-size:40px;
+			color:#ff6600;
+			border-top-color:#2ecc71;
+			border-bottom-color:#efefef;
+		
+		}
+</style>
+		<div class="my_progress_bar" data-yjsg-round-progress data-start="5"  data-end="38" data-speed="20" data-border="10"></div>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		<div class="my_progress_bar" data-yjsg-round-progress data-start="5"  data-end="38" data-speed="20" data-border="10"></div>
+		[/yjsgpre] </div>
+	<div class="yjsg-col-1">
+		<h3>Activate progress bar when in view</h3>
+		<p>
+			To activate progress bar when in view you can use
+			<a href="http://imakewebthings.com/jquery-waypoints/" tagret="_blank">
+				Waypoints jQuery
+			</a>
+			plugin that comes with Yjsg framework. Please note that in this case you should <span class="yjt_label yjtb_red">not</span> use <code>data-yjsg-round-progress</code> data attribute but <code>yjsg-round-progress</code> element class instead. Please use below code example as reference.
+		<h3 class="yjsg-sub-heading">example:</h3>
+<script>
+jQuery(document).on('ready', function () {
+ jQuery('.mybar_in_view').waypoint(function() {
+  jQuery(this).yjsgroundprogress();
+ }, {
+  offset: '100%',
+  triggerOnce:true
+ });
+});
+</script>
+		<div class="mybar_in_view yjsg-round-progress" data-start="0"  data-end="90" data-speed="10"></div>
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"] 
+		<script>
+		jQuery(document).on('ready', function () {
+		 jQuery('.mybar_in_view').waypoint(function() {
+		  jQuery(this).yjsgroundprogress();
+		 }, {
+		  offset: '100%',
+		  triggerOnce:true
+		 });
+		});
+		</script>
+		<div class="mybar_in_view yjsg-round-progress" data-start="0"  data-end="90" data-speed="10"></div>
+		[/yjsgpre] </div>
+</div>
