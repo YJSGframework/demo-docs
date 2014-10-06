@@ -1,41 +1,46 @@
 <p>
-		Yjsgparse is very powerful shortcode and can read external or internal page, cache it's contents and import it inside your Joomla article or extension. Please note that <code>yjsgparse</code> is including only safe html tags located inside the page <code>body</code> tag.
-	</p>
-	<div class="yjsg-row">
-		<div class="yjsg-col-1">
-			<h3 class="yjsg-sub-heading">options:</h3>
-			<table class="yjsg-table-bordered">
-				<thead>
-					<tr>
-						<th>Option</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>url</code></td>
-						<td><span class="text-error">*Required option</span>. Url link to the page you want parsed.</td>
-					</tr>
-					<tr>
-						<td><code>days</code></td>
-						<td><span class="text-error">*Required option</span>. If left empty cached page is recreated after <code>10</code> days and cached again.</td>
-					</tr>
-					<tr>
-						<td><code>hours</code></td>
-						<td><span class="text-error">*Required option</span>. If left empty cached page is recreated after <code>10</code> days and cached again.</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 class="yjsg-sub-heading">examples:</h3>
-			[yjsgnote color="blue" close="no" title="Yjsgparse example:" border="default" radius="radiusb5" icon="fa fa-external-link"]
-			<p>
-				This entire article content is parsed from an external source.
-			</p>
-			[/yjsgnote]
-			<h3 class="yjsg-sub-heading">markup:</h3>
-			[yjsgpre pretty="1" scroll="0"]
-			{yjsgparse url="link to your page" days="1" hours="2"}// cache will be recreated  in 1 day and 2 hours
-			{yjsgparse url="link to your page" days="" hours=""}// cache will be recreated  in 10 days
-			{yjsgparse url="link to your page" days="" hours="0.5"}// cache will be recreated  in 30 minutes
-			[/yjsgpre] </div>
-	</div>
+	Yjsgparse is very powerful shortcode and can read external or internal page, cache it's contents and import it inside your Joomla article or extension. Please note that <code>yjsgparse</code> is including only safe html tags located inside the page <code>body</code> tag.
+</p>
+<div class="yjsg-row">
+	<div class="yjsg-col-1">
+		<h3 class="yjsg-sub-heading">options:</h3>
+		<table class="yjsg-table-bordered">
+			<thead>
+				<tr>
+					<th>Option</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>url</code></td>
+					<td><span class="text-error">*Required option</span>. Url link to the page you want parsed.</td>
+				</tr>
+				<tr>
+					<td><code>days</code></td>
+					<td><span class="text-error">*Required option</span>. If left empty cached page is recreated after <code>10</code> days and cached again.</td>
+				</tr>
+				<tr>
+					<td><code>hours</code></td>
+					<td><span class="text-error">*Required option</span>. If left empty cached page is recreated after <code>10</code> days and cached again.</td>
+				</tr>
+				<tr>
+					<td><code>allowjs</code></td>
+					<td>If declared the page javascript will be cached</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="yjsg-sub-heading">examples:</h3>
+		[yjsgnote color="blue" close="no" title="Yjsgparse example:" border="default" radius="radiusb5" icon="fa fa-external-link"]
+		<p>
+			This entire article content is parsed from an external source.
+		</p>
+		[/yjsgnote]
+		<h3 class="yjsg-sub-heading">markup:</h3>
+		[yjsgpre pretty="1" scroll="0"]
+		{yjsgparse url="link to your page" days="1" hours="2"}// cache will be recreated  in 1 day and 2 hours
+		{yjsgparse url="link to your page" days="" hours=""}// cache will be recreated  in 10 days
+		{yjsgparse url="link to your page" days="" hours="0.5"}// cache will be recreated  in 30 minutes
+		{yjsgparse url="link to your page" days="" hours="" allowjs]// cache page with javascript
+		[/yjsgpre] </div>
+</div>
